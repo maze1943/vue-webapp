@@ -15,7 +15,13 @@
     "webpack-cli": "^3.3.11"
   },
   "devDependencies": {
+    "css-loader": "^3.5.3",
+    "file-loader": "^6.0.0",
     "html-webpack-plugin": "^4.2.1",
+    "less": "^3.11.1",
+    "less-loader": "^6.0.0",
+    "style-loader": "^1.2.1",
+    "url-loader": "^4.1.0",
     "webpack-dev-server": "^3.10.3"
   }
 }

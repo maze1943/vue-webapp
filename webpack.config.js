@@ -1,16 +1,16 @@
 module.exports = {
-    entry: './app/Main.js',//打包入口文件
+    entry: './src/main.js',//打包入口文件
     output: {
         path: __dirname + '/dist',//文件输出目录
         filename: 'bundle.js'//输出文件名
     },
-    module: {
+    module: {//配置loader规则
         rules: [
-            {
+            {//字体
                 test: /\.(eot|svg|ttf|woff|woff2)(\?\S*)?$/,
                 loader: 'file-loader'
             },
-            {
+            {//js使用babel
                 test: /\.js$/,
                 use:{
                     loader: 'babel-loader',//ES6--->ES5
@@ -18,6 +18,18 @@ module.exports = {
                         presets:['@babel/preset-env']//预设项及转换规范
                     }
                 }
+            },
+            {//css
+                test: /\.css$/,
+                use: ['style-loader','css-loader']
+            },
+            {//less
+                test:/\.less$/,
+                use:['style-loader','css-loader','less-loader']
+            },
+            {//样式表中的图片路径
+                test:/\.png|\.jpg|\.gif|\.bmp$/,
+                use:'url-loader'
             }
         ]
     },
