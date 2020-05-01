@@ -1,0 +1,21 @@
+{
+  "scripts": {
+    "dev": "webpack-dev-server",
+    "webpack": "./node_modules/.bin/webpack"
+  },
+  "dependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
+    "babel-loader": "^8.1.0",
+    "crm": "^1.0.1",
+    "element-ui": "^2.13.1",
+    "vue": "^2.6.11",
+    "vue-router": "^3.1.6",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11"
+  },
+  "devDependencies": {
+    "html-webpack-plugin": "^4.2.1",
+    "webpack-dev-server": "^3.10.3"
+  }
+}

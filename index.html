@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+    <div class="root">
+        <!-- <p v-cloak>{{message}}</p>
+        <a href="#" @click.prevent="popMessage">popMessage</a>
+        <input type="text" v-model="kawayi" class="">
+        <p v-cloak>{{kawayi | kawayiFilter}}</p>
+
+        <hr>
+        <span>姓名</span>
+        <input type="text" v-model="name">
+        <span>性别</span>
+        <input type="text" v-model="gender">
+        <button @click="addName">添加</button>
+        <transition-group tag="ul" appear>
+            <li v-for="item in nameArr" :key="item.id">
+                {{item.id}} - {{item.name}} - {{item.gender}} <a href="#" @click="deleteName(item.id)">删除</a>
+            </li>
+        </transition-group>
+
+        <hr>
+        <div class="box" v-color></div>
+        <v-button></v-button>
+        <vlist :title="title" @listhover="popMessage"></vlist> -->
+
+        <!-- <hr>
+        <comment-add @submitcomment="submitComment"></comment-add>
+        <transition-group tag='div' name="comment-slide">
+            <comment-list v-for="(item,i) in commentList" :key="i" :item="item"></comment-list>
+        </transition-group> -->
+        <transition name='router' mode="out-in">
+            <router-view></router-view>
+        </transition>
+    </div>
+</body>
+<script src="/bundle.js"></script>
+</html>
