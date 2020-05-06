@@ -125,6 +125,13 @@ new Vue({
         }
     },
     created() {
+        // class NewClass{
+        //     static prop1 = {'aa':'11'}
+        // }
+        let aaaa ='今天天气好晴朗';
+        setTimeout(()=>{
+            alert(aaaa);
+        },1000);
         console.log('vm created');
     },
     router

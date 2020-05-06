@@ -12,12 +12,8 @@ module.exports = {
             },
             {//js使用babel
                 test: /\.js$/,
-                use:{
-                    loader: 'babel-loader',//ES6--->ES5
-                    options:{
-                        presets:['@babel/preset-env']//预设项及转换规范
-                    }
-                }
+                use: 'babel-loader',
+                exclude: /node_modules/
             },
             {//css
                 test: /\.css$/,
